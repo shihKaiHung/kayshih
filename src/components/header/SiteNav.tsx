@@ -1,17 +1,14 @@
+import React from 'react';
 import { Link } from 'gatsby';
 import { darken } from 'polished';
-import React from 'react';
-
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
-
 import { colors } from '../../styles/colors';
 import { SocialLink, SocialLinkFb } from '../../styles/shared';
 import config from '../../website-config';
-import { Facebook } from '../icons/facebook';
-import { Twitter } from '../icons/twitter';
 import { SubscribeModal } from '../subscribe/SubscribeModal';
 import { SiteNavLogo } from './SiteNavLogo';
+import {Instagram} from '@emotion-icons/boxicons-logos/Instagram'
 
 interface SiteNavProps {
   isHome?: boolean;
@@ -112,12 +109,12 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
                 <a
                   className="social-link-instgram"
                   css={[SocialLink, SocialLinkFb]}
-                  href={config.facebook}
+                  href={config.instagram}
                   target="_blank"
                   title="Instagram"
                   rel="noopener noreferrer"
                 >
-                  <Facebook />
+                  <Instagram />
                 </a>
               )}
             </SocialLinks>
@@ -305,5 +302,7 @@ const HideNav = css`
     transform: translateY(0);
   }
 `;
+
+
 
 export default SiteNav;
