@@ -79,7 +79,7 @@ Edit `gatsby-config.js` section `siteMetadata`
  siteMetadata: {
     title: 'My awesome site name',
     description: 'This is a description for my site',
-    siteUrl: 'https://mysite.com', // full path to blog - no ending slash
+    siteUrl: 'https://mysite.com',// full path to blog - no ending slash
   },
 ```
 

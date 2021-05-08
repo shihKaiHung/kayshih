@@ -2,7 +2,7 @@ export interface WebsiteConfig {
   title: string;
   description: string;
   coverImage?: string;
-  logo: string;
+  logo?: string;
   /**
    * Specifying a valid BCP 47 language helps screen readers announce text properly.
    * See: https://dequeuniversity.com/rules/axe/2.2/valid-lang
@@ -16,9 +16,7 @@ export interface WebsiteConfig {
    * full url, no username
    */
   facebook?: string;
-  /**
-   * full url, no username
-   */
+  instagram?: string;
   twitter?: string;
   /**
    * hide or show all email subscribe boxes
@@ -49,13 +47,14 @@ export interface WebsiteConfig {
 }
 
 const config: WebsiteConfig = {
-  title: 'Ghost',
-  description: 'The professional publishing platform',
+  title: 'KayShih',
+  description: '',
   coverImage: 'img/blog-cover.png',
-  logo: 'img/ghost-logo.png',
-  lang: 'en',
+  logo: undefined,
+  lang: 'zh-TW',
   siteUrl: 'https://gatsby-casper.netlify.com',
   facebook: 'https://www.facebook.com/ghost',
+  instagram: 'https://www.facebook.com/ghost',
   twitter: 'https://twitter.com/tryghost',
   showSubscribe: true,
   mailchimpAction: 'https://twitter.us19.list-manage.com/subscribe/post?u=a89b6987ac248c81b0b7f3a0f&amp;id=7d777b7d75',

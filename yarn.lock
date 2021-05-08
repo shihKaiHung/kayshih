@@ -1042,6 +1042,22 @@
     "@babel/helper-validator-identifier" "^7.14.0"
     to-fast-properties "^2.0.0"
 
+"@emotion-icons/boxicons-logos@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@emotion-icons/boxicons-logos/-/boxicons-logos-3.0.0.tgz#dc07691024304e9003effbac6900814d8d15d129"
+  integrity sha512-+9pScoReE76gaMzkL9x+oAS6aANpEz4D1MDPn8f/v72R7rzRpABx5vcBPzCCdITiBZ/2ujy6IFiJZ6HUhBEaKQ==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@emotion-icons/emotion-icon" "4.0.0"
+
+"@emotion-icons/emotion-icon@4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@emotion-icons/emotion-icon/-/emotion-icon-4.0.0.tgz#d0eb1331c01461b309e58dbcec735ff4d8bd5408"
+  integrity sha512-Kxu6WgspOrGzBObPMp0xy+V4HaCNDTUAurxPM26Twnj+Tal4luktV2dQBJX9ElEfV59zVFsUs1DiuOdsxUNtPw==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@emotion/is-prop-valid" "^1.0.0"
+
 "@emotion/babel-plugin-jsx-pragmatic@^0.1.5":
   version "0.1.5"
   resolved "https://registry.yarnpkg.com/@emotion/babel-plugin-jsx-pragmatic/-/babel-plugin-jsx-pragmatic-0.1.5.tgz#27debfe9c27c4d83574d509787ae553bf8a34d7e"
@@ -1093,7 +1109,7 @@
   resolved "https://registry.yarnpkg.com/@emotion/hash/-/hash-0.8.0.tgz#bbbff68978fefdbe68ccb533bc8cbe1d1afb5413"
   integrity sha512-kBJtf7PH6aWwZ6fka3zQ0p6SBYzx4fl1LoZXE2RrnYST9Xljm7WfKJrU4g/Xr3Beg72MLrp1AWNUmuYJTL7Cow==
 
-"@emotion/is-prop-valid@^1.1.0":
+"@emotion/is-prop-valid@^1.0.0", "@emotion/is-prop-valid@^1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@emotion/is-prop-valid/-/is-prop-valid-1.1.0.tgz#29ef6be1e946fb4739f9707def860f316f668cde"
   integrity sha512-9RkilvXAufQHsSsjQ3PIzSns+pxuX4EW8EbGeSPjZMHuMx6z/MOzb9LpqNieQX4F3mre3NWS2+X3JNRHTQztUQ==
