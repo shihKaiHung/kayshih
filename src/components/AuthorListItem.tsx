@@ -50,14 +50,6 @@ export const AuthorListItem: React.FC<AuthorListItemProps> = props => {
       )}
       {props.tooltip === 'large' && (
         <div css={[AuthorCardStyles, hovered && Hovered]} className="author-card">
-          {props.author.avatar.children.length && (
-            <Img
-              css={AuthorProfileImage}
-              className="author-profile-image"
-              fluid={props.author.avatar.children[0].fluid}
-              fadeIn={false}
-            />
-          )}
           <div className="author-info">
             <div className="bio">
               <h2>{props.author.id}</h2>
@@ -78,7 +70,7 @@ export const AuthorListItem: React.FC<AuthorListItemProps> = props => {
         <Img
           css={AuthorProfileImage}
           className="author-profile-image"
-          fluid={props.author.avatar.children[0].fluid}
+          fluid={props.author.avatar?.children[0].fluid}
           alt={props.author.id}
           fadeIn={false}
         />

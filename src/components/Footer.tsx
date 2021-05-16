@@ -3,7 +3,6 @@ import { setLightness } from 'polished';
 import React from 'react';
 import styled from '@emotion/styled';
 import { css } from '@emotion/react';
-
 import { colors } from '../styles/colors';
 import { outer, inner } from '../styles/shared';
 import config from '../website-config';
@@ -22,21 +21,11 @@ export const Footer: React.FC = () => {
         </section>
         <SiteFooterNav>
           <Link to="/">Latest Posts</Link>
-          {config.facebook && (
-            <a href={config.facebook} target="_blank" rel="noopener noreferrer">
-              Facebook
+          {config.instagram&& (
+            <a href={config.instagram} target="_blank" rel="noopener noreferrer">
+             Instagram 
             </a>
           )}
-          {config.twitter && (
-            <a href={config.twitter} target="_blank" rel="noopener noreferrer">
-              Twitter
-            </a>
-          )}
-
-          <a href="https://github.com/scttcper/gatsby-casper" target="_blank" rel="noopener noreferrer">
-            Casper
-          </a>
-
           <a href="/rss.xml">RSS</a>
         </SiteFooterNav>
       </div>

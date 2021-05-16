@@ -48,7 +48,7 @@ export interface WebsiteConfig {
 
 const config: WebsiteConfig = {
   title: 'KayShih',
-  description: '',
+  description: 'I share my life as a front-end developer',
   coverImage: 'img/blog-cover.png',
   logo: undefined,
   lang: 'zh-TW',
@@ -61,7 +61,7 @@ const config: WebsiteConfig = {
   mailchimpName: 'b_a89b6987ac248c81b0b7f3a0f_7d777b7d75',
   mailchimpEmailFieldName: 'MERGE0',
   googleSiteVerification: 'GoogleCode',
-  footer: 'is based on Gatsby Casper',
+  footer: 'share my life as a front-end developer',
 };
 
 export default config;
