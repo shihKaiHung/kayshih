@@ -3,7 +3,7 @@ const path = require('path');
 
 module.exports = {
   siteMetadata: {
-    title: 'KayShih',
+    title: "KayShih's Website",
     description: 'A port of the casper blog built for gatsby',
     siteUrl: 'https://Kayshih.com', // full path to blog - no ending slash
   },

@@ -47,7 +47,7 @@ export interface WebsiteConfig {
 }
 
 const config: WebsiteConfig = {
-  title: 'KayShih',
+  title: "KayShih's Website",
   description: 'I share my life as a front-end developer',
   coverImage: 'img/blog-cover.png',
   logo: undefined,

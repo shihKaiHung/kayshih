@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A Full and Comprehensive Style Test
+title: A Full and Comprehensive Style Test2
 image: img/testimg-cover.jpg
 author: [KayShih]
 date: 2021-05-21
