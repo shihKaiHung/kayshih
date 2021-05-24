@@ -8,182 +8,42 @@ tags:
   - Tests
 ---
 
-Below is just about everything you’ll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.
+前端一直是一個易學難精的領域，必須承認目前要當一個前端工程師的門檻真的很低， 所以成為了前端工程師之後呢？ 我們該怎麼讓自己成為更好的資深前端？
 
 ---
 
-# Heading 1
+# 保持面試的頻率
 
-## Heading 2
+我一直鼓勵身邊的 junior 工程師們，三四個月就應該去其他公司面試看看，能快速了解自己目前的實力到哪裡，透過面試的問題來了解自己到底還有哪邊不足，甚至一些好的面試官都能馬上給你實質的反饋，這些都是能幫助自己成長的好機會。不要覺得準備履歷或面試很麻煩，準備這些東西同時也能了解自己過去這段時間是不是有學到新的東西能放到履歷上。
+別等到真的想換工作再來想說要面試
 
-### Heading 3
+# 多用 Twitter 成為社群的一份子
 
-#### Heading 4
+Twitter 一直都是軟體工程師們最活躍的社群大本營，在上面你可以跟很多大神成為推友，你可以盡情在上面發問或轉推，我常常把一些大大的心得儲存到書籤，當作是一種紀錄。
+我目前大部分的新知識或是新技術都是從 Twitter 上知道的，Twitter 還有個有趣的地方在於你並不用真實身份在上面，如果你跟我一樣是一個害羞的人，就用一個網路身份在上面認識新的工程師朋友吧
 
-##### Heading 5
+> 萬事問推友，連總統都開始用推特了你還不用嗎
 
-###### Heading 6
+# 底層基礎很重要
 
----
+現在前端幾乎都已經框架化了，大部分的轉職工程師都是直接就找個框架開始學，當熟悉一個框架之後，可以開始回頭學習一些 JS、瀏覽器跟 http 等等的基礎概念，目前遇到蠻多轉職工程師的大問題就是對框架熟悉，但是再往底層討論多一點可能就完全不了解了。前端雖然已經沒幾年前變化這個快速了，但是只要打好基礎，對於之後有新的技術出來，我相信都能馬上上手。
 
-Lorem ipsum dolor sit amet, [test link]() adipiscing elit. **This is strong.** Nullam dignissim convallis est. Quisque aliquam. _This is emphasized._ Donec faucibus. Nunc iaculis suscipit dui. 5<sup>3</sup> = 125. Water is H<sub>2</sub>O. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. <cite>The New York Times</cite> (That’s a citation). <span style="text-decoration:underline;">Underline</span>. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.
+你知道什麼是 side effect 嗎？
 
-HTML and CSS are our tools. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. To copy a file type `COPY filename`. <del>Dinner’s at 5:00.</del> <span style="text-decoration:underline;">Let’s make that 7</span>. This <del>text</del> has been struck.
+你知道為什麼需要 immutable 嗎？
 
----
+你知道什麼 High order function 嗎？
 
-## Media
+你知道什麼為什麼用 Transition 做動畫，效能會比較好嗎？
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+其實有很多很多的基本題，我遇到很多前端工程師都是答不出來的，而這些基礎知識也是晉升到資深工程師的一大關鍵。
 
-### Big Image
+> 基礎真的很重要，麻煩先去旁邊練好運球再來
 
-![Test Image](img/testimg1.jpg)
+# 保持好奇心
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+對你不了解的事，就抱著為什麼的好奇心，不要當個「我不知道為什麼要用這樣，只知道這樣用就可以 Work」的工程師，很多時候看到一些看不懂的程式碼，就照著用，但你也不知道這樣做的原理是什麼，其實這樣的心態滿隨意的。我認為一個好的工程師應該要對自己寫出來的每段程式碼負責，也同時要知道自己為什麼要這樣寫，就算今天是參考別人的寫法，那也應該先了解消化過。了解別人程式碼的同時也是一種學習，去思考別人為什麼會這樣思考，如果今天自己想寫一個相同的功能會怎麼寫？
 
-### Small Image
+我始終認為寫程式沒有到非常頂尖的水準是不需要討論到有沒有天份的，只需要認真學習跟努力就能靠寫程式有份不錯的工作，隨著現在教學課程越來越多，轉職前端的人也越來越多，這絕對不會是一件壞事，畢竟目前工程師的缺口還是很多，但是我們沒辦法保證過幾年還是像現在在風口上，所以要持續保持自己的競爭力，很多工作一兩年的工程師都還是困在一種不知道自己不知道的狀態，不願意學習也不願意接受別人意見，千萬別當那種工作十年卻只有一年經驗的人。
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
-
-![Small Test Image](img/testimg2.jpg)
-
-Labore et dolore.
-
----
-
-## List Types
-
-### Definition List
-
-Definition List Title
-: This is a definition list division.
-
-Definition
-: An exact statement or description of the nature, scope, or meaning of something: _our definition of what constitutes poetry._
-
-### Ordered List
-
-1. List Item 1
-2. List Item 2
-   1. Nested list item A
-   2. Nested list item B
-3. List Item 3
-
-### Unordered List
-
-- List Item 1
-- List Item 2
-  - Nested list item A
-  - Nested list item B
-- List Item 3
-
----
-
-## Table
-
-| Table Header 1 | Table Header 2 | Table Header 3 |
-| :------------: | :------------: | :------------: |
-|   Division 1   |   Division 2   |   Division 3   |
-|   Division 1   |   Division 2   |   Division 3   |
-|   Division 1   |   Division 2   |   Division 3   |
-
----
-
-## Preformatted Text
-
-Typographically, preformatted text is not the same thing as code. Sometimes, a faithful execution of the text requires preformatted text that may not have anything to do with code. Most browsers use Courier and that’s a good default — with one slight adjustment, Courier 10 Pitch over regular Courier for Linux users.
-
-### Code
-
-Code can be presented inline, like `<?php bloginfo('stylesheet_url'); ?>`, or using [jekyll's highlight
-filter](http://jekyllrb.com/docs/templates/#code-snippet-highlighting) to
-highlight a block of code. Because we have more specific typographic needs for code, we’ll specify Consolas and Monaco ahead of the browser-defined monospace font.
-
-```css
-#container {
-  float: left;
-  margin: 0 -240px 0 0;
-  width: 100%;
-}
-```
-
----
-
-## Blockquotes
-
-Let’s keep it simple. Italics are good to help set it off from the body text. Be sure to style the citation.
-
-> Good afternoon, gentlemen. I am a HAL 9000 computer. I became operational at the H.A.L. plant in Urbana, Illinois on the 12th of January 1992. My instructor was Mr. Langley, and he taught me to sing a song. If you’d like to hear it I can sing it for you. — [HAL 9000](http://en.wikipedia.org/wiki/HAL_9000)
-
-And here’s a bit of trailing text.
-
----
-
-## Text-level semantics
-
-HTML elements
-
-<p>The <a href="#">a element</a> example <br>
-The <abbr>abbr element</abbr> and <abbr title="Title text">abbr element with title</abbr> examples <br>
-The <b>b element</b> example <br>
-The <cite>cite element</cite> example <br>
-The <code>code element</code> example <br>
-The <del>del element</del> example <br>
-The <dfn>dfn element</dfn> and <dfn title="Title text">dfn element with title</dfn> examples <br>
-The <em>em element</em> example <br>
-The <i>i element</i> example <br>
-The <ins>ins element</ins> example <br>
-The <kbd>kbd element</kbd> example <br>
-The <mark>mark element</mark> example <br>
-The <q>q element <q>inside</q> a q element</q> example <br>
-The <s>s element</s> example <br>
-The <samp>samp element</samp> example <br>
-The <small>small element</small> example <br>
-The <span>span element</span> example <br>
-The <strong>strong element</strong> example <br>
-The <sub>sub element</sub> example <br>
-The <sup>sup element</sup> example <br>
-The <var>var element</var> example <br>
-The <u>u element</u> example</p>
-* * *
-
-## Embeds
-
-Sometimes all you want to do is embed a little love from another location and set your post alive.
-
-### Video
-
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-Culpa qui officia deserunt mollit anim id est laborum.
-
-<iframe src="//player.vimeo.com/video/103224792" width="600" height="337" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-### Slides
-
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-<script async class="speakerdeck-embed" data-id="585245d01ee1013238737e42b879906f" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-
-Culpa qui officia deserunt mollit anim id est laborum.
-
-### Audio
-
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/52891122&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-
-Culpa qui officia deserunt mollit anim id est laborum.
-
-### Code
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
-
-<p data-height="268" data-theme-id="0" data-slug-hash="bcqhe" data-default-tab="result" data-user="rglazebrook" class='codepen'>See the Pen <a href='http://codepen.io/rglazebrook/pen/bcqhe/'>Simple Rotating Spinner</a> by Rob Glazebrook (<a href='http://codepen.io/rglazebrook'>@rglazebrook</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
-
-Isn't it beautiful.
-
-_[HTML]: Hyper Text Markup Language
-_[CSS]: Cascading Style Sheets
+可以把前端當作進入軟體工程師的第一步，會了一個程式語言之後學其他語言相對也會快很多，可以多去摸索其他程式語言，可能會找到另外一片天，我也是從前端開始學程式到現在發現自己其實對 Devops 方面的技術更加有興趣，也慢慢在轉換跑道了。
