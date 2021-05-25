@@ -49,7 +49,7 @@ const About: React.FC = props => {
   return (
     <IndexLayout>
       <Helmet>
-        <title>About</title>
+        <title>About | KayShih's Website</title>
       </Helmet>
       <Wrapper css={PageTemplate}>
         <header className="site-archive-header no-image" css={[SiteHeader, SiteArchiveHeader]}>
