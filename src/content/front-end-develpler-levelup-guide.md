@@ -1,7 +1,7 @@
 ---
 layout: post
-title: A Full and Comprehensive Style Test
-image: img/testimg-cover.jpg
+title: 前端難民升級攻略
+image: img/welcome-to-ghost.jpg
 author: [KayShih]
 date: 2021-05-21
 tags:
