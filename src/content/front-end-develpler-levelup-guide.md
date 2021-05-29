@@ -5,7 +5,7 @@ image: img/welcome-to-ghost.jpg
 author: [KayShih]
 date: 2021-05-21
 tags:
-  - Tests
+  - Tech
 ---
 
 前端一直是一個易學難精的領域，必須承認目前要當一個前端工程師的門檻真的很低， 所以成為了前端工程師之後呢？ 我們該怎麼讓自己成為更好的資深前端？
