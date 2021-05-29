@@ -1,8 +1,9 @@
 ---
 layout: post
 title: 來幫你Gatsby專案加上GA以及生出sitemap吧
+image: img/callum-shaw-555357-unsplash.jpg
 author: [KayShih]
-date: 2021-05-24
+date: 2021-05-29
 tags:
   - Tech
 ---
