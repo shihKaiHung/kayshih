@@ -55,8 +55,8 @@ const item: Item = {
   id: "id",
 }
 
-let num = value + 5 // 此時TS編譯器會顯示Object is possibly 'null'
-let max = Math.max(a.name, 5) 此時ts編譯器會告訴你name為string type無法做為number判斷
+let num = item.value + 5 // 此時TS編譯器會顯示Object is possibly 'null'
+let max = Math.max(item.name, 5) 此時ts編譯器會告訴你name為string type無法做為number判斷
 ```
 
 其實我這篇主要想講的是型別系統，不單單只是 TypeScript，純粹只是 TypeScript 目前在前端是比較主流的型別工具，為了多一點關注所以標題才這樣下。
