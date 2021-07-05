@@ -20,7 +20,8 @@ tags:
 const arr = [5, 7, 11, 13];
 const a1 = arr[0] // 5
 arr.map((a, i) => arr[i] = a + 2);
-console.log(a1) // 7
+console.log(a1) // 5
+console.log(arr[0]) // 7
 
 你可以這麼寫
 const newArr = arr.map((a) => a + 2);
