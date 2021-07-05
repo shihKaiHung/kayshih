@@ -81,9 +81,9 @@ let obj = {
 
 let obj2 = obj
 
-obj.detail.age = "17";
+obj.detail.age = 17;
 
-console.log(obj2.detail.age) // 5
+console.log(obj2.detail.age) // 17
 
 你可以這麼寫
 
