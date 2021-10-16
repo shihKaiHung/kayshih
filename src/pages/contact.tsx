@@ -60,7 +60,7 @@ const Contact: React.FC = () => {
                                     <p>
                                         不論你對前端技術有任何疑問或是有工作想一起合作進行，<br /> 歡迎透過
                                         <strong>
-                                            <a href="kai.hung@thephenom.co">Email</a>
+                                            <a href="mailto:kai.hung@thephenom.co">Email</a>
                                         </strong>
                                         跟我聯繫。
                                     </p>
