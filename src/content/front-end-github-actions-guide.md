@@ -46,7 +46,7 @@ actions 會幫我們執行各種自動化流程，而這些每一條流程就被
 
 - Step
   <br/>
-  Job 是由 Step 所組成的，Step 會在相同的 instance 中執行，所以 Step 所建立的檔案或是資料是可以傳遞到下一個 Step。
+  Job 是由 Step 所組成的，Step會在相同的 instance 中執行，所以 Step 所建立的檔案或是資料是可以傳遞到下一個 Step。
 
 ---
 
