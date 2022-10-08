@@ -1,61 +1,51 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import Header from "@components/Header.astro";
-import Breadcrumbs from "@components/Breadcrumbs.astro";
 import Footer from "@components/Footer.astro";
 import Hr from "@components/Hr.astro";
-import EuroMapChart from '@components/EuroMapChart';
-import AsiaMapChart from '@components/AsiaMapChart';
+
 
 ---
 
 <Layout>
   <Header activeNav="travel" />
-  <Breadcrumbs />
+
   <main id="main-content">
-    <section class="mb-28 prose max-w-3xl prose-img:border-0">
-      <h1 class="text-2xl sm:text-3xl tracking-wider" >Travel</h1>
+    <section id="hero">
+      <h1>旅遊紀錄</h1>
       <p>
         自己本身非常熱愛旅行，希望透過地圖跟時間軸來記錄自己曾經去過的國家
         <br/>
         這些地圖效果是使用React-simple-map這個套件來製作的。
       </p>
-      <h2 class="font-bold">TO DO</h2>
-      <ul class="pl-0">
-        <li class="flex items-center h-5">
+      <h2 class="font-bold">TO DO List</h2>
+      <ul>
+        <li class="flex items-center mt-2">
           <input checked="checked" disabled type="checkbox" class="border-gray-300 rounded h-5 w-5 mr-2" /> 
           Maker
         </li>
-        <li class="flex items-center h-5">
+        <li class="flex items-center mt-2">
           <input checked="checked" disabled type="checkbox" class="border-gray-300 rounded h-5 w-5 mr-2" /> 
         Tooltip 
         </li>
-        <li class="flex items-center h-5">
+        <li class="flex items-center mt-2">
           <input  disabled type="checkbox" class="border-gray-300 rounded h-5 w-5 mr-2" />
           Timeline
         </li>
-        <li class="flex items-center h-5">
+        <li class="flex items-center mt-2">
           <input  disabled type="checkbox" class="border-gray-300 rounded h-5 w-5 mr-2" />
           Article Link 
         </li>
-        <li class="flex items-center h-5">
+        <li class="flex items-center mt-2">
           <input  disabled type="checkbox" class="border-gray-300 rounded h-5 w-5 mr-2" />
           City Map 
         </li>
-        <li class="flex items-center h-5">
+        <li class="flex items-center mt-2">
           <input  disabled type="checkbox" class="border-gray-300 rounded h-5 w-5 mr-2" />
           Map Switch 
         </li>
       </ul>
     </section>
-    <section class="featured">
-      <h2>Europe</h2>
-      <EuroMapChart client:only="react"/>
-    </section>
-    <!-- <section class="featured">
-      <h2>Asia</h2>
-      <AsiaMapChart client:only="react"/>
-    </section> -->
     <Hr />
   </main>
 
@@ -64,7 +54,9 @@ import AsiaMapChart from '@components/AsiaMapChart';
 
 <style>
   /* ===== Hero Section ===== */
- 
+  #hero h1 {
+    @apply inline-block font-bold my-4 sm:my-8 text-3xl sm:text-5xl;
+  }
   #hero .rss-link {
     @apply mb-6;
   }
