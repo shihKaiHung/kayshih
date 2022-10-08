@@ -3,8 +3,6 @@ import { LOGO_IMAGE, SITE } from "src/config";
 import Hr from "./Hr.astro";
 import LinkButton from "./LinkButton.astro";
 import Analytics from '@julian_cataldo/astro-analytics/Analytics.astro';
-import logoPNG from "/assets/logo.png";
-import logoSVG from "/assets/logo.svg";
 
 export interface Props {
   activeNav?: "posts" | "tags" | "about" | "search" | "travel";
@@ -22,7 +20,7 @@ const { activeNav } = Astro.props;
         {
           LOGO_IMAGE.enable ? (
             <img
-              src={LOGO_IMAGE.svg ? logoSVG : logoPNG}
+              src={LOGO_IMAGE.svg ? "" : ""}
               alt="AstroPaper Logo"
               width={LOGO_IMAGE.width}
               height={LOGO_IMAGE.height}
