@@ -1,0 +1,139 @@
+---
+import { SOCIALS } from "src/config";
+import Layout from "@layouts/Layout.astro";
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+import LinkButton from "@components/LinkButton.astro";
+import Hr from "@components/Hr.astro";
+import Card from "@components/Card";
+import getSortedPosts from "@utils/getSortedPosts";
+import socialIcons from "@assets/socialIcons";
+import slugify from "@utils/slugify";
+import type { Frontmatter } from "src/types";
+
+const posts = await Astro.glob<Frontmatter>("../contents/*.md");
+
+const sortedPosts = getSortedPosts(posts);
+---
+
+<Layout>
+  <Header />
+  <main id="main-content">
+    <section id="hero">
+      <p>
+        Hello, 我是KayShih，從事軟體開發已經接近7年時間，目前正在經營自己的軟體開發公司，在創建個人公司之前在新加坡新創公司擔任FrontEnd Leader，具有多次從0到1的產品開發經驗，會對不同的產品需求去規劃其合適的框架與技術。
+        會想開始寫經營這個Blog的主要原因是想增進自己的寫作技巧，以及分享我所閱讀以及思考的內容，我是一個熱愛閱讀的人，但只有閱讀而沒有輸出的話沒有辦法內化這些知識，所以我決定透過寫文章的方式來組織自己的思考脈絡。
+      </p>
+      <div class="social-wrapper">
+        <div class="whitespace-nowrap">Follow me:</div>
+        <div class="social-icons">
+          {
+            SOCIALS.filter((social) => social.active).map((social) => (
+              <LinkButton
+                href={social.href}
+                className="link-button"
+                title={social.name}
+              >
+                <Fragment set:html={socialIcons[social.name]} />
+              </LinkButton>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <Hr />
+
+    <section id="featured">
+      <h2>Featured</h2>
+      <ul>
+        {
+          sortedPosts.map(
+            ({ frontmatter }) =>
+              frontmatter.featured && (
+                <Card
+                  href={`/posts/${slugify(frontmatter)}`}
+                  post={frontmatter}
+                  secHeading={false}
+                />
+              )
+          )
+        }
+      </ul>
+    </section>
+
+    <Hr />
+
+    <section id="recent-posts">
+      <h2>Recent Posts</h2>
+      <ul>
+        {
+          sortedPosts.map(
+            ({ frontmatter }, index) =>
+              index < 4 && (
+                <Card
+                  href={`/posts/${slugify(frontmatter)}`}
+                  post={frontmatter}
+                  secHeading={false}
+                />
+              )
+          )
+        }
+      </ul>
+      <div class="all-posts-btn-wrapper">
+        <LinkButton href="/posts">
+          All Posts
+          <svg xmlns="http://www.w3.org/2000/svg"
+            ><path
+              d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"
+            ></path>
+          </svg>
+        </LinkButton>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  /* ===== Hero Section ===== */
+  #hero {
+    @apply pt-8;
+  }
+  #hero h1 {
+    @apply inline-block font-bold my-4 sm:my-8 text-3xl sm:text-5xl;
+  }
+  #hero .rss-link {
+    @apply mb-6;
+  }
+  #hero .rss-icon {
+    @apply h-6 w-6 scale-110 sm:scale-125 mb-2 sm:mb-3 fill-skin-accent;
+  }
+  #hero p {
+    @apply my-2;
+  }
+  .social-wrapper {
+    @apply flex flex-col sm:flex-row sm:items-center mt-4 mb-6;
+  }
+  .social-icons {
+    @apply mt-1 sm:mt-0 sm:ml-2 sm:space-x-1;
+  }
+  .link-button {
+    @apply p-2 sm:p-1 hover:rotate-6;
+  }
+
+  /* ===== Featured & Recent Posts Sections ===== */
+  #featured,
+  #recent-posts {
+    @apply pt-12 pb-6;
+  }
+  #featured h2,
+  #recent-posts h2 {
+    @apply font-semibold text-2xl tracking-wide;
+  }
+
+  .all-posts-btn-wrapper {
+    @apply text-center my-8;
+  }
+</style>
