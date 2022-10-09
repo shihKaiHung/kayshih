@@ -16,6 +16,7 @@
     "@types/react": "^18.0.20",
     "@types/react-simple-maps": "^1.0.8",
     "astro": "^1.4.0",
+    "astro-robots-txt": "^0.3.10",
     "d3-geo": "^3.0.1",
     "fuse.js": "^6.6.2",
     "github-slugger": "^1.4.0",

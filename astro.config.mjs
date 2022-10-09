@@ -5,6 +5,7 @@ import remarkToc from "remark-toc";
 import remarkCollapse from "remark-collapse";
 import sitemap from "@astrojs/sitemap";
 import image from "@astrojs/image";
+import robotsTxt from "astro-robots-txt";
 
 export default defineConfig({
   site: "https://kayshih.com/",
@@ -19,6 +20,7 @@ export default defineConfig({
     image({
       serviceEntryPoint: "@astrojs/image/sharp",
     }),
+    robotsTxt(),
   ],
   markdown: {
     remarkPlugins: [
