@@ -7,7 +7,6 @@ featured: true
 draft: false
 tags:
   - tech 
-ogImage: https://res.cloudinary.com/noezectz/v1663745737/astro-paper/astropaper-x-forestry-og_kqfwp0.png
 description:
   前端工程師要找到好的工作一定得需要作品集才有辦法說服人，但是在還沒開始工作前怎麼去累積作品呢？
 ---

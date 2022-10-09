@@ -2,7 +2,7 @@
 author: KayShih
 datetime: 2021-06-06T15:22:00Z
 title: 前端工程師的吃飯工具，WebStorm與VScode你怎麼選？
-slug: adding-new-posts-in-astropaper-theme
+slug: webstorm-or-vscode
 draft: false
 tags:
   - tech
