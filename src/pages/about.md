@@ -4,10 +4,6 @@ title: "About"
 ---
 
 
-<div>
-  <img src="/assets/personal.jpg" class="" alt="personl picture">
-</div>
-
 ## About me
 
 Hello, 我是KayShih，從事軟體開發已經接近7年時間，目前正在經營自己的一人公司，在創建個人公司之前在新加坡新創公司擔任FrontEnd Leader，目前轉任為顧問角色，具有多次從0到1的產品開發經驗，擅長針對不同的產品需求去規劃其合適的框架與技術。

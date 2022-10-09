@@ -4,8 +4,10 @@ import react from "@astrojs/react";
 import remarkToc from "remark-toc";
 import remarkCollapse from "remark-collapse";
 import sitemap from "@astrojs/sitemap";
+import image from "@astrojs/image";
+
 export default defineConfig({
-  site: "https://astro-paper.pages.dev/",
+  site: "https://kayshih.com/",
   integrations: [
     tailwind({
       config: {
@@ -14,6 +16,9 @@ export default defineConfig({
     }),
     react(),
     sitemap(),
+    image({
+      serviceEntryPoint: "@astrojs/image/sharp",
+    }),
   ],
   markdown: {
     remarkPlugins: [
@@ -30,5 +35,10 @@ export default defineConfig({
       wrap: true,
     },
     extendDefaultPlugins: true,
+  },
+  vite: {
+    ssr: {
+      external: ["image-size", "tiny-glob"],
+    },
   },
 });
