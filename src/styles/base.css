@@ -19,6 +19,19 @@
     --color-card-muted: 89, 107, 129;
     --color-border: 59, 70, 85;
   }
+  .theme-dark .timeline-titile {
+      color: #fff
+  }
+  .theme-dark .show-more {
+      color: #fff
+  }
+  .media-image{
+    width: auto !important;
+    align-self: start !important;
+    display: flex;
+    justify-content: flex-start !important;
+  }
+
   #sun-svg,
   .theme-dark #moon-svg {
     display: none;

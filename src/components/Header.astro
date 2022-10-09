@@ -5,7 +5,7 @@ import LinkButton from "./LinkButton.astro";
 import Analytics from '@julian_cataldo/astro-analytics/Analytics.astro';
 
 export interface Props {
-  activeNav?: "posts" | "tags" | "about" | "search" | "travel" | "trainings";
+  activeNav?: "posts" | "tags" | "about" | "search" | "travel" | "trainings" | "changelog";
 }
 
 const { activeNav } = Astro.props;
@@ -58,6 +58,11 @@ const { activeNav } = Astro.props;
         <li>
           <a href="/trainings" class={activeNav === "trainings" ? "active" : ""}
             >Training</a
+          >
+        </li>
+        <li>
+          <a href="/changelog" class={activeNav === "changelog" ? "active" : ""}
+            >ChangeLog</a
           >
         </li>
       </ul>

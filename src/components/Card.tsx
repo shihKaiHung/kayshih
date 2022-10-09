@@ -25,7 +25,7 @@ export default function Card({ href, post, secHeading = true }: Props) {
         )}
       </a>
       <Datetime datetime={post.datetime} />
-      <p>{post.description}</p>
+      <p style={{ fontSize: "0.8rem" }}>{post.description}</p>
     </li>
   );
 }
