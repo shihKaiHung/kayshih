@@ -2,6 +2,7 @@
 import Layout from "@layouts/Layout.astro";
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
+import Hr from "@components/Hr.astro";
 import Tag from "@components/Tag.astro";
 import Datetime from "@components/Datetime";
 import type { MarkdownInstance } from "astro";
@@ -41,6 +42,21 @@ const { title, author, description, ogImage, datetime, tags } = frontmatter;
     <article id="article" role="article" class="mx-auto max-w-3xl mt-8 prose">
       <Content />
     </article>
+    <div class="w-full mt-20 mb-5">
+      <Hr/>
+    </div>
+    <h2 class="font-bold ">請我喝杯咖啡</h2>
+    <p>如果你喜歡這篇文章覺得它對你有那麼點幫助的話，歡迎贊助我喝一杯我最愛的路易莎澳洲小拿鐵。</p>
+    <div class="flex w-full mt-5">
+      <div>
+        <h6 class="font-bold">街口支付</h6>
+        <img class="w-[240px]" src="/assets/qrcode.jpg"/>
+      </div>
+      <div class="ml-5" >
+        <h6 class="font-bold">悠遊支付</h6>
+        <img class="w-[226px]" src="/assets/qrcode2.jpg"/>
+      </div>
+    </div>
 
     <ul class="tags-container">
       {tags.map((tag) => <Tag name={tag} />)}
