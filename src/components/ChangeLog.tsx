@@ -28,6 +28,11 @@ const ChangeLog = () => {
       }}
       items={[
         {
+          title: "2022-10-25",
+          cardTitle: "Islands Architecture會為前端帶來什麼樣新的改變嗎",
+          url: "https://kayshih.com/posts/islands-architecture",
+        },
+        {
           title: "2022-10-09",
           cardTitle: "重寫個人網站",
           url: "https://kayshih.com/",
