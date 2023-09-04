@@ -28,6 +28,14 @@ const ChangeLog = () => {
       }}
       items={[
         {
+          title: "2023-09-04",
+          cardTitle: "升級至Astro 3.0",
+        },
+        {
+          title: "2023-09-04",
+          cardTitle: "新增未來旅程資訊",
+        },
+        {
           title: "2022-10-25",
           cardTitle: "Islands Architecture會為前端帶來什麼樣新的改變嗎",
           url: "https://kayshih.com/posts/islands-architecture",
