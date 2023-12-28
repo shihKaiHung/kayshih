@@ -3,9 +3,74 @@ import { Chrono } from "react-chrono";
 
 const items = [
   {
+    title: "2023-12-24",
+    cardTitle: "第一次做代購",
+    cardDetailedText: "以前就很想嘗試做代購，剛好福岡能買的東西蠻多就來試試",
+  },
+  {
+    title: "2023-12-21",
+    cardTitle: "Fukuoka 4 days again!!",
+    cardDetailedText: [
+      "太愛福岡，隔一週馬上又買機票再來一次",
+      "中華航空",
+      "機票價格: NT 15,000",
+    ],
+  },
+  {
+    title: "2023-12-07",
+    cardTitle: "Fukuoka 4 days",
+    cardDetailedText: [
+      "第二次去日本，愛上福岡的生活步調",
+      "虎航",
+      "機票價格: NT 7,500",
+    ],
+  },
+  {
+    title: "2023-11-17",
+    cardTitle: "創立Outside of Coding",
+    url: "https://outsideofcoding.com/",
+    cardDetailedText: `屬於軟體工程師的生活類訪談雜誌`,
+  },
+  {
+    title: "2023-10-10",
+    cardTitle: "Visit Prague again!!",
+    cardDetailedText: `第二次來布拉格就沒那麼喜歡這邊`,
+    media: {
+      name: "prague",
+      source: {
+        url: "/assets/changeLog/prague.jpg",
+      },
+      type: "IMAGE",
+    },
+  },
+  {
+    title: "2023-10-04",
+    cardTitle: "Visit Budapest!!",
+    cardDetailedText: `我最喜歡的城市Top 1`,
+    media: {
+      name: "Budapest",
+      source: {
+        url: "/assets/changeLog/budapest.jpg",
+      },
+      type: "IMAGE",
+    },
+  },
+  {
+    title: "2023-10-04",
+    cardTitle: "匈捷10日自由行",
+    cardDetailedText: ["中華航空", "機票價格: NT 32,000"],
+  },
+  {
     title: "2023-09-12",
     cardTitle: "日本名古屋一日遊",
-    cardDetailedText: `樂桃航空快閃`,
+    cardDetailedText: [`樂桃航空快閃`, "樂桃航空", "機票價格: NT 4,500"],
+    media: {
+      name: "nagoya",
+      source: {
+        url: "/assets/changeLog/nagoya.jpg",
+      },
+      type: "IMAGE",
+    },
   },
   {
     title: "2023-09-04",
@@ -18,14 +83,30 @@ const items = [
   {
     title: "2023-06-09",
     cardTitle: "首爾4天3夜旅遊",
+    cardDetailedText: ["酷航", "機票價格: NT 6,500"],
   },
   {
     title: "2023-05-22",
-    cardTitle: "購買Tesla Model Y",
+    cardTitle: "Hello Tesla Model Y",
+    media: {
+      name: "spain",
+      source: {
+        url: "/assets/changeLog/tesla.jpg",
+      },
+      type: "IMAGE",
+    },
   },
   {
     title: "2023-05-10",
-    cardTitle: "賣掉Audi Q3SB",
+    cardTitle: "Goodbye Audi Q3SB",
+    cardDetailedText: `真的很愛這台車，但是想換電動車了`,
+    media: {
+      name: "audi",
+      source: {
+        url: "/assets/changeLog/audiq3.jpg",
+      },
+      type: "IMAGE",
+    },
   },
   {
     title: "2023-04-22",
@@ -35,12 +116,27 @@ const items = [
   {
     title: "2023-02-11",
     cardTitle: "看人生第一場NBA球賽",
-    cardDetailedText: `LA Lakers vs. Golden State Warriors`,
+    cardDetailedText: [
+      "LA Lakers vs. Golden State Warriors",
+      "球票價格: NT 20,000",
+    ],
   },
   {
     title: "2023-02-09",
     cardTitle: "洛杉磯之旅",
-    cardDetailedText: `LA - Las Vegas - Antelope Canyo`,
+    cardDetailedText: [
+      "LA - Las Vegas - Antelope Canyo",
+      "國泰航空",
+      "機票價格: NT 22,000",
+    ],
+  },
+  {
+    title: "2023-12-04",
+    cardTitle: "裝潢完成，入住林口",
+  },
+  {
+    title: "2023-08-05",
+    cardTitle: "林口買人生第一間房",
   },
   {
     title: "2022-10-25",
