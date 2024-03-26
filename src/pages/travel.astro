@@ -4,79 +4,109 @@ import Header from "@components/Header.astro";
 import Breadcrumbs from "@components/Breadcrumbs.astro";
 import Footer from "@components/Footer.astro";
 import Hr from "@components/Hr.astro";
-import EuroMapChart from '@components/EuroMapChart';
+import EuroMapChart from "@components/EuroMapChart";
 
+// const trips = [
+//   { name: "Nagoya, Japan", from: "Sep 12", to: "Sep 12" },
+//   { name: "Budapest, Hungary", from: "Oct 9", to: "Oct 11" },
+//   { name: "Prague, Czech Republic", from: "Oct 12", to: "Oct 14" },
+//   { name: "Fukuoka, Japan", from: "Dec 07", to: "Dec 10" },
+// ];
 
 const trips = [
-    { name: "Nagoya, Japan", from: "Sep 12", to: "Sep 12" },
-    { name: "Budapest, Hungary", from: "Oct 9", to: "Oct 11" },
-    { name: "Prague, Czech Republic", from: "Oct 12", to: "Oct 14" },
-    { name: "Fukuoka, Japan", from: "Dec 07", to: "Dec 10" },
+  { name: "Tokyo, Japan", from: "26 Apr 2024", to: "30 Apr 2024" },
+  { name: "Seoul, Korea", from: "17 May 2024", to: "21 May 2024" },
+  // { name: "Tokyo, Japan", from: "Oct 12", to: "Oct 14" },
 ];
-
 ---
+
 <Layout>
   <Header activeNav="travel" />
   <Breadcrumbs />
   <main id="main-content">
     <section class="mb-18 prose max-w-3xl prose-img:border-0">
-      <h1 class="text-2xl sm:text-3xl tracking-wider" >Travel</h1>
-      <table  class="border-collapse">
+      <h1 class="text-2xl sm:text-3xl tracking-wider">Travel</h1>
+      <table class="border-collapse">
         <thead>
-            <tr class="bg-gray-200 text-left text-sm leading-4 text-gray-500 uppercase">
-                <th class="py-4 px-6 border-none">下段旅程</th>
-                <th class="py-4 px-6 border-none">From</th>
-                <th class="py-4 px-6 border-none">To</th>
-            </tr>
+          <tr
+            class="bg-gray-200 text-left text-sm leading-4 text-gray-500 uppercase"
+          >
+            <th class="py-4 px-6 border-none">下段旅程</th>
+            <th class="py-4 px-6 border-none">From</th>
+            <th class="py-4 px-6 border-none">To</th>
+          </tr>
         </thead>
         <tbody class="text-sm font-normal text-gray-700">
-          {trips.map((trip) => (
+          {
+            trips.map((trip) => (
               <tr class="hover:bg-gray-100">
                 <td class="py-4 px-6 border-none">{trip.name}</td>
                 <td class="py-4 px-6 border-none">{trip.from}</td>
                 <td class="py-4 px-6 border-none">{trip.to}</td>
               </tr>
-            ))}
+            ))
+          }
         </tbody>
-    </table>
+      </table>
 
-    <p>
-      自己本身非常熱愛旅行，希望透過地圖跟時間軸來記錄自己曾經去過的國家
-      <br/>
-      這些地圖效果是使用React-simple-map這個套件來製作的。
-    </p>
-    <h2 class="font-bold">TO DO</h2>
-    <ul class="pl-0">
-      <li class="flex items-center h-5">
-        <input checked="checked" disabled type="checkbox" class="border-gray-300 rounded h-5 w-5 mr-2" /> 
-        Maker
-      </li>
-      <li class="flex items-center h-5">
-        <input checked="checked" disabled type="checkbox" class="border-gray-300 rounded h-5 w-5 mr-2" /> 
-      Tooltip 
-      </li>
-      <li class="flex items-center h-5">
-        <input  disabled type="checkbox" class="border-gray-300 rounded h-5 w-5 mr-2" />
-        Timeline
-      </li>
-      <li class="flex items-center h-5">
-        <input  disabled type="checkbox" class="border-gray-300 rounded h-5 w-5 mr-2" />
-        Article Link 
-      </li>
-      <li class="flex items-center h-5">
-        <input  disabled type="checkbox" class="border-gray-300 rounded h-5 w-5 mr-2" />
-        City Map 
-      </li>
-      <li class="flex items-center h-5">
-        <input  disabled type="checkbox" class="border-gray-300 rounded h-5 w-5 mr-2" />
-        Map Switch 
-      </li>
-    </ul>
-  </section>
-    <section class="featured">
-      <h2>Europe</h2>
-      <EuroMapChart client:only="react"/>
+      <h2 class="font-bold">TO DO</h2>
+      <ul class="pl-0">
+        <li class="flex items-center h-5">
+          <input
+            checked="checked"
+            disabled
+            type="checkbox"
+            class="border-gray-300 rounded h-5 w-5 mr-2"
+          />
+          Maker
+        </li>
+        <li class="flex items-center h-5">
+          <input
+            checked="checked"
+            disabled
+            type="checkbox"
+            class="border-gray-300 rounded h-5 w-5 mr-2"
+          />
+          Tooltip
+        </li>
+        <li class="flex items-center h-5">
+          <input
+            disabled
+            type="checkbox"
+            class="border-gray-300 rounded h-5 w-5 mr-2"
+          />
+          Timeline
+        </li>
+        <li class="flex items-center h-5">
+          <input
+            disabled
+            type="checkbox"
+            class="border-gray-300 rounded h-5 w-5 mr-2"
+          />
+          Article Link
+        </li>
+        <li class="flex items-center h-5">
+          <input
+            disabled
+            type="checkbox"
+            class="border-gray-300 rounded h-5 w-5 mr-2"
+          />
+          City Map
+        </li>
+        <li class="flex items-center h-5">
+          <input
+            disabled
+            type="checkbox"
+            class="border-gray-300 rounded h-5 w-5 mr-2"
+          />
+          Map Switch
+        </li>
+      </ul>
     </section>
+    <!-- <section class="featured">
+      <h2>Europe</h2>
+      <EuroMapChart client:only="react" />
+    </section> -->
     <!-- <section class="featured">
       <h2>Asia</h2>
       <AsiaMapChart client:only="react"/>
@@ -89,7 +119,7 @@ const trips = [
 
 <style>
   /* ===== Hero Section ===== */
- 
+
   #hero .rss-link {
     @apply mb-6;
   }
